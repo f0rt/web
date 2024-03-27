@@ -1,0 +1,12 @@
+
+.splide {
+    height: 30hv; /* Example fixed height */
+    width: 100%; /* Responsive width */
+}
+
+.splide .splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the slide area without stretching */
+    object-position: center; 
+}
