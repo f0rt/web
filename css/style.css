@@ -1,7 +1,15 @@
 
+body{
+    margin: 0px;   
+}
+
+header{
+    padding: 5px;
+}
+
 .splide {
     height: 30hv; /* Example fixed height */
-    width: 100%; /* Responsive width */
+    width: auto;
     border-radius: 0.8rem;
     overflow: hidden;
     border-style: solid;
