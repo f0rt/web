@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     splideElements.forEach(function(splideElement) {
         new Splide(splideElement,{
-                        type   : 'loop',
-                        pagination: true,
-                        arrows : false,
+                        type       : 'loop',
+                        pagination : true,
+                        arrows     : false,
                         height     : '30vh',
                         autoWidth  : false,
                         autoHeight : true,

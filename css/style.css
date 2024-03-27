@@ -2,6 +2,12 @@
 .splide {
     height: 30hv; /* Example fixed height */
     width: 100%; /* Responsive width */
+    border-radius: 0.8rem;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
 }
 
 .splide .splide__slide img {
@@ -9,4 +15,5 @@
     height: 100%;
     object-fit: cover; /* Cover the slide area without stretching */
     object-position: center; 
+    
 }
