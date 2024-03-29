@@ -1,10 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Outfit:wght@100..900&display=swap');
 
 body{
     margin: 0px;   
-}
-
-header{
-    padding: 15px;
 }
 
 .splide {
@@ -24,4 +21,42 @@ header{
     object-fit: cover; /* Cover the slide area without stretching */
     object-position: center; 
     
+}
+
+.content{
+    padding: 15px;
+}
+
+main .price {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+
+header .title {
+    position: absolute;
+    padding: 2rem;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.title-right-top{
+    right:0px;
+}
+
+.title-right-bottom{
+    right: 0px;
+    bottom: 0px;
+}
+
+.title-left-bottom{
+    left:0px;
+    bottom: 0px;
 }
