@@ -43,13 +43,19 @@ main .name {
     margin-top: 1rem;
 }
 
-main .address {
+.address {
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 0.8rem;
     color: grey;
+}
+
+.address img{
+    height: 0.9rem;
+    position: relative;
+    top:.05rem
 }
 
 .feature-panel{
