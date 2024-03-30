@@ -51,3 +51,27 @@ main .address {
     font-size: 0.8rem;
     color: grey;
 }
+
+.feature-panel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: .8rem;
+}
+
+.feature{
+    display: flex;
+    border-radius: .5rem;
+    background-color: #F0F3F6;
+    padding: .5rem;
+    align-items: center;
+    margin: .2rem;
+}
+.feature img{
+    height: 1.2rem;
+    margin-right: 0.3rem;
+}
