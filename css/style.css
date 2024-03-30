@@ -56,6 +56,7 @@ main .address {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: .5rem;
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -69,7 +70,6 @@ main .address {
     background-color: #F0F3F6;
     padding: .5rem;
     align-items: center;
-    margin: .2rem;
 }
 .feature img{
     height: 1.2rem;
