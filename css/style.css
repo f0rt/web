@@ -82,3 +82,54 @@ main .name {
     height: 1.2rem;
     margin-right: 0.3rem;
 }
+
+.maps{
+    width: 100%;
+}
+
+.tabs {
+    position: relative;
+}
+
+.tabs input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .tabs label {
+    display: inline-block;
+    cursor: pointer;
+    background: #eee;
+    border: 1px solid #ccc;
+  }
+  
+  .tabs .content {
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+  .tabs .marker{
+    width: 2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+
+  .tabs .content img{
+    width: 100%;
+  }
+  
+  /* Show content when respective radio button is checked */
+  #tab-map:checked ~ .map-content,
+  #tab-aerial:checked ~ .aerial-content {
+    display: block;
+    padding: 0;
+  }
+  
+  /* Optional: Style for the selected tab label */
+  .tabs input[type="radio"]:checked + label {
+    background: #ddd;
+  }
