@@ -45,10 +45,9 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             {
                 "featureType": "poi",
+                "elementType": "labels.text",
                 "stylers": [
-                    {
-                        "visibility": "off"
-                    }
+                  { "visibility": "on" }
                 ]
             },
             {
@@ -71,6 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
             center: myLocation,
             zoom: 16,
             mapTypeControl: false,
+            streetViewControl: false,
             styles: customMapStyles,
         });
 
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
             position: myLocation,
             title: 'Апартамент',
             icon: {
-                url: 'https://mydream.estate//img/icon/marker-home.svg',
+                url: 'https://mydream.estate/img/icon/marker-home.svg',
                 // Size of the image
                 size: new google.maps.Size(40, 40),
                 // Specifies the point within the icon image that is anchored to the marker's position
