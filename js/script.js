@@ -12,4 +12,85 @@ document.addEventListener('DOMContentLoaded', function() {
                     } ).mount();
                 }
     );
+    let map;
+
+    async function initMap() {
+        var customMapStyles = [
+            {
+                "featureType": "all",
+                "stylers": [
+                    {
+                        "saturation": 0
+                    },
+                    {
+                        "hue": "#e7ecf0"
+                    }
+                ]
+            },
+            {
+                "featureType": "road",
+                "stylers": [
+                    {
+                        "saturation": -70
+                    }
+                ]
+            },
+            {
+                "featureType": "transit",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "water",
+                "stylers": [
+                    {
+                        "visibility": "simplified"
+                    },
+                    {
+                        "saturation": -60
+                    }
+                ]
+            }
+        ];
+        // Specify the location for the center of the map
+        var myLocation = {lat: 42.638845, lng: 23.313585};
+        const { Map } = await google.maps.importLibrary("maps");
+
+        map = new Map(document.getElementById("map"), {
+            center: myLocation,
+            zoom: 16,
+            mapTypeControl: false,
+            styles: customMapStyles,
+        });
+
+        var marker = new google.maps.Marker({
+            map: map,
+            position: myLocation,
+            title: 'Апартамент',
+            icon: {
+                url: 'http://127.0.0.1:5500//img/icon/marker-home.svg',
+                // Size of the image
+                size: new google.maps.Size(40, 40),
+                // Specifies the point within the icon image that is anchored to the marker's position
+                anchor: new google.maps.Point(20, 40),
+                // Specifies the image's origin point (top-left corner of the image portion to use)
+                origin: new google.maps.Point(0, 0),
+                // Scales the icon size
+                scaledSize: new google.maps.Size(40, 40)
+              },
+        });
+    }
+
+    initMap();
 });
