@@ -44,6 +44,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 ]
             },
             {
+                "featureType": "transit.station.bus",
+                "stylers": [{ "visibility": "on" }]
+            },
+            {
                 "featureType": "poi",
                 "elementType": "labels.text",
                 "stylers": [
