@@ -13,68 +13,118 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
 </head>
 <body>
-    <header class="content">
-        <section class="splide">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide"><img src="img/pic/hero-app.jpg"/></li>
-                    <li class="splide__slide"><img src="img/pic/living_room1.jpg"/></li>
-                    <li class="splide__slide"><img src="img/pic/kitchen1.jpg"/></li>
-                    <li class="splide__slide"><img src="img/pic/bedroom2.jpg"/></li>
-                    <li class="splide__slide"><img src="img/pic/bedroom1.jpg"/></li>
-                    <li class="splide__slide"><img src="img/pic/bedroom3.jpg"/></li>
-                    <li class="splide__slide"><img src="img/pic/bathroom1.jpg"/></li>
-                    <li class="splide__slide"><img src="img/pic/bathroom2.jpg"/></li>
-                    <li class="splide__slide"><img src="img/pic/terrace.jpg"/></li>
-                    <li class="splide__slide"><img src="img/pic/entrance.jpg"/></li>
-                    <li class="splide__slide"><img src="img/pic/aerial.jpg"/></li>
-
+    <div class="container">
+        <header>
+            <img class="hero-img" src="img/pic/hero-app.jpg"/>
+            <div class="content">
+                <div class="title">Дом за продажба.</div>
+                <ul class="features">
+                    <li>ПЛОЩ 193 м2</li>
+                    <li class="dot">•</li>
+                    <li>СТАИ 4</li>
+                    <li class="dot">•</li>
+                    <li>ПАРКОМЕСТА 3</li>
                 </ul>
+                <div class="cta-container">
+                    <div class="price"> 575 000 €</div>
+                    <div class="vat">(не се дължи ДДС)</div>
+                    <button><img src="/img/icon/phone.svg"/>Свържи се с нас!</button>
+                </div>
+                <div class="address"><img src="img/icon/marker.svg"/>Драгалевци, София</div>
             </div>
-        </section>
-    </header>
-    <main>
-        <section class="content">
-            <div class="price"> 575 000 €</div>
-            <div class="name"> Продава 4-стаен апартамент</div>
-            <div class="address"><img src="img/icon/marker.svg"/>Витошка Зорница 3Б, Драгалевци, София</div>
-        </section>
-        <section class="feature-panel content">
-            <div class="feature">
-                <img src="img/icon/area.svg"/><span>193 m2</span>
-            </div>
-            <div class="feature">
-                <img src="img/icon/bedroom.svg"/><span>3 спални</span>
-            </div>
-            <div class="feature">
-                <img src="img/icon/bathroom.svg"/><span>2 бани</span>
-            </div>
-            <div class="feature">
-                <img src="img/icon/basement.svg"/><span>2 мазета</span>
-            </div>
-            <div class="feature">
-                <img src="img/icon/floor.svg"/><span>5-ти етаж</span>
-            </div>
-            <div class="feature">
-                <img src="img/icon/garage.svg"/><span>1 гараж</span>
-            </div>
-            <div class="feature">
-                <img src="img/icon/parking.svg"/><span>2 паркоместа</span>
-            </div>
-        </section>
-        <section class="content">
-            <div class="address">
-                Продава се луксозен апартамент в затворен комплекс в Драгалевци, обзаведен с просторна дневна, кухня с трапезария, три спални, две бани и южна тераса с изглед към Витоша. Апартаментът е с напълно обзаведен с висококачествени електроуреди, Velux прозорци, система за интелигентно домоуправление и включва гараж с зарядна станция за електромобили и две паркоместа. Комплексът предлага ниска такса за поддръжка, асансьор, контрол на достъпа, зелени площи и открит басейн. Разположен в комуникативен район, апартаментът осигурява лесен достъп до центъра и планината, близо до хипермаркети. На разположение сме да организираме оглед в най-удобно за вас време.
-            </div>
-        </section>
-        <section class="content map-section">
-            <div id="map" style="height: 300px;width: 300px;"></div>
+        </header>
+        <main>
+            <section class="content info">
+                <img class="icon" src="img/icon/building.svg">
+                <div class="name">ЗА АПАРТАМЕНТА</div>
+                <div class="description">
+                    Продава се луксозен апартамент в затворен комплекс в Драгалевци, обзаведен с просторна дневна, кухня с трапезария, три спални, две бани и южна тераса с изглед към Витоша. Апартаментът е с напълно обзаведен с висококачествени електроуреди, Velux прозорци, система за интелигентно домоуправление и включва гараж с зарядна станция за електромобили и две паркоместа. Комплексът предлага ниска такса за поддръжка, асансьор, контрол на достъпа, зелени площи и открит басейн. Разположен в комуникативен район, апартаментът осигурява лесен достъп до центъра и планината, близо до хипермаркети. На разположение сме да организираме оглед в най-удобно за вас време.
+                </div>
+                <div class="features">
+                    <div class="feature">
+                        <img src="img/icon/area.svg">
+                        <span class="caption">площ</span>
+                        <span class="value">193 кв.м.</span>
+                    </div>
+                    <div class="feature">
+                        <img src="img/icon/bedroom.svg">
+                        <span class="caption">спални</span>
+                        <span class="value">3</span>
+                    </div>
+                    <div class="feature">
+                        <img src="img/icon/bathroom.svg">
+                        <span class="caption">бани</span>
+                        <span class="value">2</span>
+                    </div>
+                    <div class="feature">
+                        <img src="img/icon/basement.svg">
+                        <span class="caption">мазета</span>
+                        <span class="value">2</span>
+                    </div>
+                    <div class="feature">
+                        <img src="img/icon/garage.svg">
+                        <span class="caption">гараж</span>
+                        <span class="value">1</span>
+                    </div>
+                    <div class="feature">
+                        <img src="img/icon/parking.svg">
+                        <span class="caption">паркоместа</span>
+                        <span class="value">2</span>
+                    </div>
+                </div>
 
-          <!-- prettier-ignore -->
-            <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-            ({key: "AIzaSyAf9DLorriqG3ehjkvHw2Af2uPZ4Bacmc8", v: "weekly"});</script>
-        </section>
-       
-    </main>
+            </section>
+            <!-- <section class="feature-panel content">
+                <div class="feature">
+                    <img src="img/icon/area.svg"/><span>193 m2</span>
+                </div>
+                <div class="feature">
+                    <img src="img/icon/bedroom.svg"/><span>3 спални</span>
+                </div>
+                <div class="feature">
+                    <img src="img/icon/bathroom.svg"/><span>2 бани</span>
+                </div>
+                <div class="feature">
+                    <img src="img/icon/basement.svg"/><span>2 мазета</span>
+                </div>
+                <div class="feature">
+                    <img src="img/icon/floor.svg"/><span>5-ти етаж</span>
+                </div>
+                <div class="feature">
+                    <img src="img/icon/garage.svg"/><span>1 гараж</span>
+                </div>
+                <div class="feature">
+                    <img src="img/icon/parking.svg"/><span>2 паркоместа</span>
+                </div>
+            </section> -->
+            <!-- <section class="content">
+                <section class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><img src="img/pic/hero-app.jpg"/></li>
+                            <li class="splide__slide"><img src="img/pic/living_room1.jpg"/></li>
+                            <li class="splide__slide"><img src="img/pic/kitchen1.jpg"/></li>
+                            <li class="splide__slide"><img src="img/pic/bedroom2.jpg"/></li>
+                            <li class="splide__slide"><img src="img/pic/bedroom1.jpg"/></li>
+                            <li class="splide__slide"><img src="img/pic/bedroom3.jpg"/></li>
+                            <li class="splide__slide"><img src="img/pic/bathroom1.jpg"/></li>
+                            <li class="splide__slide"><img src="img/pic/bathroom2.jpg"/></li>
+                            <li class="splide__slide"><img src="img/pic/terrace.jpg"/></li>
+                            <li class="splide__slide"><img src="img/pic/entrance.jpg"/></li>
+                            <li class="splide__slide"><img src="img/pic/aerial.jpg"/></li>
+        
+                        </ul>
+                    </div>
+                </section>
+            </section>
+            <section class="content map-section">
+                <div id="map" style="height: 300px;width: 300px;"></div>
+
+                <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+                ({key: "AIzaSyAf9DLorriqG3ehjkvHw2Af2uPZ4Bacmc8", v: "weekly"});</script>
+            </section> -->
+        
+        </main>
+    </div>
 </body>
 </html>
