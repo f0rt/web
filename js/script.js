@@ -15,53 +15,139 @@ document.addEventListener('DOMContentLoaded', function() {
     let map;
 
     async function initMap() {
-        var customMapStyles = [
+        var customMapStyles =[
             {
                 "featureType": "all",
+                "elementType": "geometry",
                 "stylers": [
                     {
-                        "saturation": 0
+                        "color": "#202c3e"
+                    }
+                ]
+            },
+            {
+                "featureType": "all",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "gamma": 0.01
                     },
                     {
-                        "hue": "#e7ecf0"
+                        "lightness": 20
+                    },
+                    {
+                        "weight": "1.39"
+                    },
+                    {
+                        "color": "#ffffff"
+                    }
+                ]
+            },
+            {
+                "featureType": "all",
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                    {
+                        "weight": "0.96"
+                    },
+                    {
+                        "saturation": "9"
+                    },
+                    {
+                        "visibility": "on"
+                    },
+                    {
+                        "color": "#000000"
+                    }
+                ]
+            },
+            {
+                "featureType": "all",
+                "elementType": "labels.icon",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    }
+                ]
+            },
+            {
+                "featureType": "landscape",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "lightness": 30
+                    },
+                    {
+                        "saturation": "9"
+                    },
+                    {
+                        "color": "#29446b"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "saturation": 20
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.park",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "lightness": 20
+                    },
+                    {
+                        "saturation": -20
                     }
                 ]
             },
             {
                 "featureType": "road",
+                "elementType": "geometry",
                 "stylers": [
                     {
-                        "saturation": -70
+                        "lightness": 10
+                    },
+                    {
+                        "saturation": -30
                     }
                 ]
             },
             {
-                "featureType": "transit",
+                "featureType": "road",
+                "elementType": "geometry.fill",
                 "stylers": [
                     {
-                        "visibility": "off"
+                        "color": "#193a55"
                     }
                 ]
             },
             {
-                "featureType": "transit.station.bus",
-                "stylers": [{ "visibility": "on" }]
-            },
-            {
-                "featureType": "poi",
-                "elementType": "labels.text",
+                "featureType": "road",
+                "elementType": "geometry.stroke",
                 "stylers": [
-                  { "visibility": "on" }
+                    {
+                        "saturation": 25
+                    },
+                    {
+                        "lightness": 25
+                    },
+                    {
+                        "weight": "0.01"
+                    }
                 ]
             },
             {
                 "featureType": "water",
+                "elementType": "all",
                 "stylers": [
                     {
-                        "visibility": "simplified"
-                    },
-                    {
-                        "saturation": -60
+                        "lightness": -20
                     }
                 ]
             }

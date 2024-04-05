@@ -15,6 +15,7 @@ body{
 .container {
     position: absolute;
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
     background-color: #E6EAEC;
@@ -48,7 +49,7 @@ header .hero-img{
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Cover the slide area without stretching */
+    object-fit: cover;
     object-position: center; 
 }
 
@@ -126,7 +127,7 @@ header .vat{
     letter-spacing: 0.05rem;
 }
 
-header .cta-container button {
+.cta-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,12 +138,16 @@ header .cta-container button {
     font-size: 1rem;
     color: white;
     background-color: #F44E21;
-    padding: .5rem .8rem;
+    padding: .8rem 1rem;
     margin-top: 1rem;
     border-radius: .3rem;
     border: none;
     cursor: pointer;
     outline: none;
+}
+
+.gray{
+    background-color: #737e9e;;
 }
 
 
@@ -205,6 +210,7 @@ section.info .description {
     font-size: 0.8rem;
     color: #737e9e;
     text-align: left;
+    max-width: 55rem;
 }
 
 section.info{
@@ -220,8 +226,8 @@ section.info .features{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    margin-top: 1.5rem;
+    gap: .8rem;
+    margin-top: 1rem;
 }
 
 section.info .features .feature{
@@ -230,16 +236,17 @@ section.info .features .feature{
     align-items: center;
     justify-content: center;
     gap: .3rem;
-    border: 1px solid #737e9e;
+    border: 1px solid #7ea0b1;
     padding: .5rem;
     border-radius: .3rem;
+
 }
 
-section .features img {
+section.info .features img {
     width: 1.5rem;
 }
 
-section .features .feature span:first-of-type {
+section.info .features .feature span:first-of-type {
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -248,7 +255,7 @@ section .features .feature span:first-of-type {
     color: #293961;
 }
 
-section .features .feature span:last-of-type {
+section.info .features .feature span:last-of-type {
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -258,45 +265,152 @@ section .features .feature span:last-of-type {
 
 }
 
-/* section.info .features{
+section.info nav ul {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    justify-content: center;
     align-items: center;
+}
+
+section.info nav ul li {
+    float: left;
+    color: #4b5867;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 11pt;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+section .features hr {
+    display: none;
+}
+
+section.cta{
+    display: flex;
+    flex-direction: row;
+    padding: 0rem;
+    gap:1rem;
     justify-content: center;
 }
 
-section.info .features .feature{
+section.floorplan {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #7D7D7D;
+}
+
+section.floorplan .plan {
+    height: 100%;
+    width: 20rem;
+    flex-grow: 1;
+}
+
+section.floorplan .plan img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center; 
+}
+
+section.floorplan .panel {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+    align-items: flex-start;
     justify-content: center;
-    width: 5rem;
-    padding: 24px;
+    width: 20rem;
+    height: 100%;
+    flex-grow: 1;
+    background-color: #2E9BDB;
+    padding: 2rem;
+
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .8rem;
+    color: white;
 }
 
-section .features img {
-    width: 2rem;
-    padding-bottom: 8px;
-}
 
-section .features .feature span:first-of-type {
-    font-family: "Jost", sans-serif;
+section.floorplan .panel .caption{
+    font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 1rem;
-    color: #293961;
+    font-size: 1.5rem;
+    color: white;
+    width: 100%;
+    flex-grow:5;
 }
 
-section .features .feature span:last-of-type {
-    font-family: "Jost", sans-serif;
+section.floorplan .panel .bullet{
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+
+
+section.location{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 30vh;
+}
+
+section.location #map {
+    height: 100%;
+    width: 20rem;
+    flex-grow: 5;
+}
+
+section.location .panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    flex-grow: 1;
+    background-color: #2E9BDB;
+    padding: 2rem;
+    color: white;
+}
+
+
+section.location .panel .caption{
+    font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 0.8rem;
-    color: #737e9e;
-} */
+    font-size: 12pt;
+    color: white;
+}
+
+section.location .panel ul{
+    list-style-type: none;
+}
+
+section.location .panel ul li span:first-of-type {
+    display: inline-block;
+    width: 10rem;
+}
+section.location .panel ul li span:last-of-type {
+}
 
 
 @media (min-width: 40rem) {
@@ -340,6 +454,36 @@ section .features .feature span:last-of-type {
 
     section.info .description {
         text-align: center;
+    }
+
+    section.info .features img {
+        width: 2rem;
+    }
+
+    section.info .features .feature{
+        flex-direction: column;
+        border: none;
+        background-color: inherit;
+    }
+
+    section.info .features .feature span:first-of-type {
+        text-transform: uppercase;
+        font-size: .8rem;
+        color: #293961;
+    }
+
+    section.info .features .feature span:last-of-type {
+        font-size: .8rem;
+        color: #737e9e;
+    }
+
+    section .features hr {
+        display: block;
+        height: 6rem;
+        width: 0;
+        border-left: .12rem solid #737e9e;
+        background: none;
+        opacity: 0.3;
     }
 }
 
@@ -392,11 +536,4 @@ section .features .feature span:last-of-type {
     object-fit: cover; /* Cover the slide area without stretching */
     object-position: center; 
     
-}
-
-
-#map {
-    height: 40vh;
-    width: 100%;
-    border-radius: 0.8rem;
 }

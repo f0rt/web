@@ -28,7 +28,7 @@
                 <div class="cta-container">
                     <div class="price"> 575 000 €</div>
                     <div class="vat">(не се дължи ДДС)</div>
-                    <button><img src="/img/icon/phone.svg"/>Свържи се с нас!</button>
+                    <button class="cta-button">Свържи се с нас!</button>
                 </div>
                 <div class="address"><img src="img/icon/marker.svg"/>Драгалевци, София</div>
             </div>
@@ -46,77 +46,124 @@
                         <span class="caption">площ</span>
                         <span class="value">193 кв.м.</span>
                     </div>
+                    <hr class="vertical-separator">
                     <div class="feature">
                         <img src="img/icon/bedroom.svg">
                         <span class="caption">спални</span>
                         <span class="value">3</span>
                     </div>
+                    <hr class="vertical-separator">
                     <div class="feature">
                         <img src="img/icon/bathroom.svg">
                         <span class="caption">бани</span>
                         <span class="value">2</span>
                     </div>
+                    <hr class="vertical-separator">
                     <div class="feature">
                         <img src="img/icon/basement.svg">
                         <span class="caption">мазета</span>
                         <span class="value">2</span>
                     </div>
+                    <hr class="vertical-separator">
                     <div class="feature">
                         <img src="img/icon/garage.svg">
                         <span class="caption">гараж</span>
                         <span class="value">1</span>
                     </div>
+                    <hr class="vertical-separator">
                     <div class="feature">
                         <img src="img/icon/parking.svg">
                         <span class="caption">паркоместа</span>
                         <span class="value">2</span>
                     </div>
                 </div>
-
+             
             </section>
-            <!-- <section class="feature-panel content">
-                <div class="feature">
-                    <img src="img/icon/area.svg"/><span>193 m2</span>
+            <section class="floorplan">
+                <div class="plan">
+                    <img src="/img/pic/plan.jpg"/>
                 </div>
-                <div class="feature">
-                    <img src="img/icon/bedroom.svg"/><span>3 спални</span>
+                <!-- <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+                ({key: "AIzaSyAf9DLorriqG3ehjkvHw2Af2uPZ4Bacmc8", v: "weekly"});</script> -->
+                <div class="panel">
+                    <div class="caption">
+                        ПРЕДИМСТВА НА ЕТАЖНИЯ ПЛАН
+                    </div>
+                    <div class="bullet">
+                        1. Панорамно изложение
+                    </div>
+                    <div>
+                        Заемайки целия пети етаж, апартаментът предлага уникални гледки от всички страни. Забележителна панорама към Витоша очарова от дневната и балкона, докато спалните се гордеят с живописен изглед към град София.
+                    </div>
+                    <div class="bullet">
+                        2. Изобилство от естествена светлина
+                    </div>
+                    <div>
+                        С 18 прозореца Velux и просторни френски прозорци, отварящи се към обширната тераса, апартаментът е пропит с естествена светлина, изключвайки необходимостта от изкуствено осветление дори в най-облачните дни.
+                    </div>
+                    <div class="bullet">
+                        3. Енергийна ефективност
+                    </div>
+                    <div>
+                        Благодарение на уникалната форма на сградата и начинът по който е проектиран покрива, през зимните месеци апартаментът ефективно акумулира топлина от съседните помещения, осигурявайки уют и намалявайки разходите за отопление.
+                    </div>
+                    
                 </div>
-                <div class="feature">
-                    <img src="img/icon/bathroom.svg"/><span>2 бани</span>
-                </div>
-                <div class="feature">
-                    <img src="img/icon/basement.svg"/><span>2 мазета</span>
-                </div>
-                <div class="feature">
-                    <img src="img/icon/floor.svg"/><span>5-ти етаж</span>
-                </div>
-                <div class="feature">
-                    <img src="img/icon/garage.svg"/><span>1 гараж</span>
-                </div>
-                <div class="feature">
-                    <img src="img/icon/parking.svg"/><span>2 паркоместа</span>
+            </section>
+            <!-- <section class="location">
+                <div id="map"></div>
+                <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+                ({key: "AIzaSyAf9DLorriqG3ehjkvHw2Af2uPZ4Bacmc8", v: "weekly"});</script>
+                <div class="panel">
+                    <span class="caption">
+                        В БЛИЗОСТ ДО АПАРТАМЕНТА
+                    </span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <ul>
+                        <li><span>Басейн</span><span>в комплекса</span></li>
+                        <li><span>Ресторант</span><span>в комплекса</span></li>
+                        <li><span>Фризьор</span><span>в комплекса</span></li>
+                        <li><span>Детска градина</span><span>90 метра</span></li>
+                        <li><span>Аптека</span><span>230 метра</span></li>
+                        <li><span>Зора</span><span>235 метра</span></li>
+                        <li><span>Lidl</span><span>240 метра</span></li>
+                        <li><span>Зоомагазин</span><span>255 метра</span></li>
+                        <li><span>DM</span><span>250 метра</span></li>
+                        <li><span>Химическо чистене</span><span>255 метра</span></li>
+                        <li><span>Фантастико</span><span>290 метра</span></li>
+                        <li><span>Спирка 111/X9</span><span>300 метра</span></li>
+                        <li><span>Автомивка</span><span>450 метра</span></li>
+                        <li><span>Тенис клуб</span><span>750 метра</span></li>
+                        <li><span>Acibadem City Clinic</span><span>950 метра</span></li>
+                    </ul>
                 </div>
             </section> -->
-            <!-- <section class="content">
-                <section class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><img src="img/pic/hero-app.jpg"/></li>
-                            <li class="splide__slide"><img src="img/pic/living_room1.jpg"/></li>
-                            <li class="splide__slide"><img src="img/pic/kitchen1.jpg"/></li>
-                            <li class="splide__slide"><img src="img/pic/bedroom2.jpg"/></li>
-                            <li class="splide__slide"><img src="img/pic/bedroom1.jpg"/></li>
-                            <li class="splide__slide"><img src="img/pic/bedroom3.jpg"/></li>
-                            <li class="splide__slide"><img src="img/pic/bathroom1.jpg"/></li>
-                            <li class="splide__slide"><img src="img/pic/bathroom2.jpg"/></li>
-                            <li class="splide__slide"><img src="img/pic/terrace.jpg"/></li>
-                            <li class="splide__slide"><img src="img/pic/entrance.jpg"/></li>
-                            <li class="splide__slide"><img src="img/pic/aerial.jpg"/></li>
-        
-                        </ul>
-                    </div>
-                </section>
+            <!-- <section class="content cta">
+                <button class="cta-button gray">Виж картата</button>
+                <button class="cta-button">Свържи се с нас!</button>
             </section>
+
+
+            <section class="content info">
+                <img class="icon" src="img/icon/building.svg">
+                <div class="name">СТАИТЕ</div>
+                <div class="description">
+                    Апартаментът разполага с красиво проектирани стаи, всяка изпълнена с естествена светлина, благодарение на щедрите прозорци Velux, които също предлагат завладяващи гледки към Витоша. Просторната дневна, сърцето на дома, е стилно обзаведена, съчетавайки уют с елегантност, което я прави перфектно място за релакс и забавления. Непосредствено до нея, кухнята и трапезарията представят модерно кулинарно пространство, оборудвано с висококачествени уреди, където всяко хранене се превръща в специален повод.
+                </div>
+                <nav>
+                    <ul>
+                        <li>Floor Plan</li>
+                        <li><button class="tablinks" onclick="openTab(event, 'Tab1')">Living Room</button></li>
+                        <li><button class="tablinks" onclick="openTab(event, 'Tab2')">Kitchen</button></li>
+                        <li>Master Bedroom</li>
+                        <li>Cabinet</li>
+                        <li>Kids Room</li>
+                        <li>Gren Bathroom</li>
+                        <li>Ping Bathroom</li>
+                    </ul>
+                </nav>
+            </section> -->
+<!--            
             <section class="content map-section">
                 <div id="map" style="height: 300px;width: 300px;"></div>
 
