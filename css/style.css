@@ -129,6 +129,7 @@ header .vat{
 
 .cta-button {
     display: flex;
+    width: 11rem;
     align-items: center;
     justify-content: center;
     font-family: "Roboto Slab", serif;
@@ -234,7 +235,7 @@ section.info .features{
 
 section.info .features .feature{
     display: flex;
-    width: 4rem;
+    width: 5rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -245,6 +246,8 @@ section.info .features .feature{
     font-weight: 600;
     font-style: normal;
     font-size: .8rem;
+
+    border: 1px solid #b5b6b8;
 }
 
 section.info .features img {
@@ -290,15 +293,19 @@ section.info nav ul li {
     cursor: pointer;
 }
 
-
-
-
 section.cta{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 0rem;
     gap:1rem;
     justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem 2rem 1rem;
+}
+
+section.cta button{
+    margin: 0rem;
 }
 
 section.floorplan {
@@ -454,35 +461,6 @@ section.location .panel ul li span:last-of-type {
         text-align: center;
     }
 
-    section.info .features img {
-        width: 2rem;
-    }
-
-    section.info .features .feature{
-        flex-direction: column;
-        border: none;
-        background-color: inherit;
-    }
-
-    section.info .features .feature span:first-of-type {
-        text-transform: uppercase;
-        font-size: .8rem;
-        color: #293961;
-    }
-
-    section.info .features .feature span:last-of-type {
-        font-size: .8rem;
-        color: #737e9e;
-    }
-
-    section .features hr {
-        display: block;
-        height: 6rem;
-        width: 0;
-        border-left: .12rem solid #737e9e;
-        background: none;
-        opacity: 0.3;
-    }
 }
 
 
