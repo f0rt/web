@@ -190,12 +190,14 @@ section{
 }
 
 section .name {
+    text-align: center;
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-size: 1.5rem;
     color: #293961;
     margin: 0.5rem 1rem 1rem 1rem;
+    
 }
 
 section .icon{
@@ -232,37 +234,34 @@ section.info .features{
 
 section.info .features .feature{
     display: flex;
-    flex-direction: row;
+    width: 4rem;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: .3rem;
-    border: 1px solid #7ea0b1;
     padding: .5rem;
-    border-radius: .3rem;
-
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: .8rem;
 }
 
 section.info .features img {
-    width: 1.5rem;
+    width: 2rem;
+}
+
+section .features hr {
+    display: none;
 }
 
 section.info .features .feature span:first-of-type {
-    font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: .8rem;
     color: #293961;
+    text-transform: uppercase;
 }
 
 section.info .features .feature span:last-of-type {
-    font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: .8rem;
-    color: #293961;
-
+    color: #737e9e;
 }
 
 section.info nav ul {
@@ -292,9 +291,7 @@ section.info nav ul li {
 }
 
 
-section .features hr {
-    display: none;
-}
+
 
 section.cta{
     display: flex;
@@ -343,7 +340,7 @@ section.floorplan .panel {
     font-weight: 400;
     font-style: normal;
     font-size: .8rem;
-    color: white;
+    color: #bbe3fa;
 }
 
 
@@ -362,6 +359,7 @@ section.floorplan .panel .bullet{
     margin-top: 1rem;
     font-weight: 600;
     font-size: .9rem;
+    color: white;
 }
 
 
@@ -486,8 +484,6 @@ section.location .panel ul li span:last-of-type {
         opacity: 0.3;
     }
 }
-
-
 
 
 /* .feature-panel{
