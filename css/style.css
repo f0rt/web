@@ -27,7 +27,7 @@ body{
 header{
     position: relative;
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
 
 }
@@ -38,7 +38,6 @@ header .content{
     align-items: flex-start;
     justify-content: flex-start;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
     height: 100%;
     padding: 0;
@@ -61,8 +60,9 @@ header .title{
     font-size: 2rem;
     color: white;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-    margin-left: 2rem;
-    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    z-index: 1;
 }
 
 header .features {
@@ -78,7 +78,8 @@ header .features {
     font-size: .7rem;
     color: white;
     letter-spacing: 1px;
-    margin-left: 2rem;
+    margin-left: 3rem;
+    z-index: 1;
 }
 
 header .features li {
@@ -103,9 +104,11 @@ header .cta-container {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    margin-left: 2rem;
+    margin-left: 3rem;
     background-color: inherit;
     border: 2px solid white;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 1;
 }
 
 header .cta-container .price {
@@ -148,7 +151,7 @@ header .vat{
 }
 
 .gray{
-    background-color: #737e9e;;
+    background-color: #4b5867;;
 }
 
 
@@ -162,8 +165,8 @@ header .cta-container button img{
 
 header .address{
     position: absolute;
-    bottom: 1rem;
-    left: 2rem;
+    bottom: 2rem;
+    left: 3rem;
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -205,7 +208,7 @@ section .icon{
     width: 1.5rem;
 }
 
-section.info .description {
+section .description {
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -216,7 +219,7 @@ section.info .description {
     max-width: 55rem;
 }
 
-section.info{
+section.center{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -247,7 +250,7 @@ section.info .features .feature{
     font-style: normal;
     font-size: .8rem;
 
-    border: 1px solid #b5b6b8;
+    border: 1px solid #2E9BDB;
 }
 
 section.info .features img {
@@ -333,11 +336,11 @@ section.floorplan .panel {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: .5rem;
+    gap: .6rem;
     align-items: flex-start;
     justify-content: center;
     width: 20rem;
-    height: 100%;
+    height: auto;
     flex-grow: 1;
     background-color: #2E9BDB;
     padding: 2rem;
@@ -368,8 +371,6 @@ section.floorplan .panel .bullet{
     font-size: .9rem;
     color: white;
 }
-
-
 
 section.location{
     display: flex;
@@ -414,14 +415,133 @@ section.location .panel ul li span:first-of-type {
     display: inline-block;
     width: 10rem;
 }
-section.location .panel ul li span:last-of-type {
+
+header .splide {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    margin: 0rem;
+    z-index: 0;
+}
+
+header .splide__track {
+    width: 100%;
+    height: 100%;
 }
 
 
+header .splide__list {
+    width: 100%;
+    height: 100%;
+}
+
+header .splide__slide {
+    width: 100%;
+    height: 100%;
+}
+
+
+header .splide .splide__slide img {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;  
+}
+
+.rooms nav ul {
+    display: flex;
+    gap: .6rem;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.rooms nav ul li button{
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #4b5867;
+    background-color: white;
+    border-radius: .3rem;
+    
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .9rem;
+}
+.rooms nav ul li button.active{
+    color: white;
+    background-color: #4b5867;
+}
+
+.rooms nav ul li button:hover{
+    color: white;
+    background-color: #4b5867;
+}
+
+.rooms .info {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.rooms .info .splide {
+    max-width: 55%;
+    border: 15px solid #fff;
+    box-shadow: 0 0 3px #d3d9dd;
+}
+
+.rooms .info .splide .splide__slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;  
+}
+
+.rooms .tab-content{
+    display: none;
+}
+
+#Tab1{
+    display: block;
+}
+
+.rooms .tab-content .info .info-panel{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: .5rem;
+}
+
+.rooms .tab-content .info .info-panel .caption {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: #293961;
+}
+
+.rooms .tab-content .info .info-panel .info-description {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .9rem;
+    color: #737e9e;
+}
+
 @media (min-width: 40rem) {
-    header{
-        height: 50vh;
-        overflow: hidden;
+   
+
+    .splide .splide__slide img {
+        height: 60vh;
     }
 
     header .title{
@@ -437,7 +557,7 @@ section.location .panel ul li span:last-of-type {
 
     header .cta-container {
         padding: 2rem;
-        background-color: inherit;
+        background-color: rgba(0, 0, 0, .3);
         border: 2px solid white;
     }
 
@@ -460,7 +580,6 @@ section.location .panel ul li span:last-of-type {
     section.info .description {
         text-align: center;
     }
-
 }
 
 
@@ -493,21 +612,3 @@ section.location .panel ul li span:last-of-type {
 
 
 
-.splide {
-    height: 100%;
-    width: 100%;
-    border-radius: 0.8rem;
-    overflow: hidden;
-    border-style: solid;
-    border-width: 2px;
-    border-color: white;
-    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
-}
-
-.splide .splide__slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Cover the slide area without stretching */
-    object-position: center; 
-    
-}
