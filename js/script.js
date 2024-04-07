@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function() {
             position: myLocation,
             title: 'Апартамент',
             icon: {
-                url: 'https://mydream.estate/img/icon/marker-home.svg',
+                url: '/img/icon/marker-home.svg',
                 // Size of the image
                 size: new google.maps.Size(40, 40),
                 // Specifies the point within the icon image that is anchored to the marker's position
