@@ -660,11 +660,13 @@ section.rooms .tab-content .info-panel .room-features .feature-info .title{
         width: auto;
     }
 
+}
+
+@media (min-width: 48rem) {
     section.rooms nav ul {
         gap: 0rem;
-    }
-
-    section.rooms nav ul li button{
-        border-radius: 0rem;
+        border-radius: .3rem;
+        overflow: hidden;
+        background-color: white;
     }
 }
