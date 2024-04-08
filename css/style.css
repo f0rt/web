@@ -373,60 +373,6 @@ section.floorplan .panel .bullet{
     color: white;
 }
 
-section.location{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 30vh;
-}
-
-section.location #map {
-    height: 40vh;
-    width: 20rem;
-    flex-grow: 5;
-}
-
-section.location .panel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    flex-grow: 1;
-    background-color: #2E9BDB;;;
-    padding: 2rem;
-    color: white;
-    width: 15rem;
-
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: .8rem;
-    color: white;
-}
-
-
-section.location .panel .caption{
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 12pt;
-    color: white;
-}
-
-section.location .panel ul{
-    padding: 0rem;
-    list-style-type: none;
-}
-
-section.location .panel ul li span:first-of-type {
-    display: inline-block;
-    width: 10rem;
-}
-
 header .splide {
     position: absolute;
     width: 100%;
@@ -508,16 +454,14 @@ section.rooms .tab-content {
     flex-direction: row;
     justify-content: center;
     padding-top: 2rem;
-    width: 100%;
 }
 
 section.rooms .tab-content .splide {
     border: .7rem solid #fff;
     box-shadow: 0 0 3px #d3d9dd;
-    width: 50%;
-    height: 100%;
-    max-width: 40rem;
+    max-width: 30rem;
     flex-grow: 2;
+    height: 100%;
 }
 
 section.rooms .tab-content .splide .splide__slide img {
@@ -534,7 +478,6 @@ section.rooms .tab-content .splide .dimensions{
     align-items: center;
     position: absolute;
     z-index: 2;
-    /* background-color: #2E9BDB; */
     background-color: rgba(0, 0, 0, .3);
     text-transform: uppercase;
     padding: 1rem;
@@ -569,7 +512,7 @@ section.rooms .tab-content .info-panel{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    width: 20rem;
+    max-width: 25rem;
     flex-grow: 1;
     margin: 1rem;
 }
@@ -621,6 +564,58 @@ section.rooms .tab-content .info-panel .room-features .feature-info .title{
     color: #4b5867;
 }
 
+section.location{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section.location #map {
+    height: 40vh;
+    width: 20rem;
+    flex-grow: 5;
+}
+
+section.location .panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    flex-grow: 1;
+    background-color: #2E9BDB;;;
+    padding: 2rem;
+    color: white;
+    width: 15rem;
+
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: .8rem;
+    color: white;
+}
+
+section.location .panel .caption{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12pt;
+    color: white;
+}
+
+section.location .panel ul{
+    padding: 0rem;
+    list-style-type: none;
+}
+
+section.location .panel ul li span:first-of-type {
+    display: inline-block;
+    width: 10rem;
+}
+
 @media (min-width: 40rem) {
    
 
@@ -662,7 +657,7 @@ section.rooms .tab-content .info-panel .room-features .feature-info .title{
     }
 
     section.rooms .tab-content .info-panel{
-        margin: 0rem;
+        margin: 2rem;
     }
     
 

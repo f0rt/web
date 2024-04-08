@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe/dist/photoswipe.css">
 </head>
 <body>
     <div class="container">
@@ -429,13 +430,73 @@
                 <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
                 ({key: "AIzaSyAf9DLorriqG3ehjkvHw2Af2uPZ4Bacmc8", v: "weekly"});</script>
             </section>
-            <!-- <section class="content">
+            <section class="content center compolex">
                 <img class="icon" src="img/icon/building.svg">
-                <div class="name">4-СТАЕН АПАРТАМЕНТ</div>
+                <div class="name">ЗА КОМПЛЕКСА</div>
                 <div class="description">
                     Продава се луксозен апартамент в затворен комплекс в Драгалевци, обзаведен с просторна дневна, кухня с трапезария, три спални, две бани и южна тераса с изглед към Витоша. Апартаментът е с напълно обзаведен с висококачествени електроуреди, Velux прозорци, система за интелигентно домоуправление и включва гараж с зарядна станция за електромобили и две паркоместа. Комплексът предлага ниска такса за поддръжка, асансьор, контрол на достъпа, зелени площи и открит басейн. Разположен в комуникативен район, апартаментът осигурява лесен достъп до центъра и планината, близо до хипермаркети. На разположение сме да организираме оглед в най-удобно за вас време.
                 </div>
-            </section> -->
+                
+<div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+  <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" 
+    data-pswp-width="1669" 
+    data-pswp-height="2500" 
+    target="_blank">
+    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" alt="" />
+  </a>
+  <!-- cropped thumbnail: -->
+  <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-2500.jpg" 
+    data-pswp-width="1875" 
+    data-pswp-height="2500" 
+    data-cropped="true" 
+    target="_blank">
+    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-200.jpg" alt="" />
+  </a>
+  <!-- data-pswp-src with custom URL in href -->
+  <a href="https://unsplash.com" 
+    data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"
+    data-pswp-width="2500" 
+    data-pswp-height="1666" 
+    target="_blank">
+    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt="" />
+  </a>
+  <!-- Without thumbnail: -->
+  <a href="http://example.com" 
+    data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-2500.jpg"
+    data-pswp-width="2500" 
+    data-pswp-height="1668" 
+    target="_blank">
+  </a>
+  <!-- wrapped with any element: -->
+  <div>
+    <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg"
+      data-pswp-width="2500" 
+      data-pswp-height="1667" 
+      target="_blank">
+      <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" alt="" />
+    </a>
+  </div>
+</div>
+
+<script type="module">
+  // Include Lightbox 
+  import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.min.js';
+
+
+  const lightbox = new PhotoSwipeLightbox({
+      // may select multiple "galleries"
+      gallery: '#gallery--getting-started',
+
+      // Elements within gallery (slides)
+      children: 'a',
+
+      // setup PhotoSwipe Core dynamic import
+      pswpModule: () => import('https://unpkg.com/photoswipe/dist/photoswipe.esm.js')
+
+  });
+  lightbox.init();
+</script>
+            </section>
             <section style="height: 200px;"></section>
         </main>
     </div>
