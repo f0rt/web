@@ -507,7 +507,7 @@ section.rooms .tab-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 2rem;
     width: 100%;
 }
 
@@ -558,6 +558,7 @@ section.rooms .tab-content{
     display: none;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 2rem;
 }
 
 #Tab1{
@@ -567,10 +568,10 @@ section.rooms .tab-content{
 section.rooms .tab-content .info-panel{
     display: flex;
     flex-direction: column;
-    padding: 2rem;
     gap: 1.5rem;
     width: 20rem;
     flex-grow: 1;
+    margin: 1rem;
 }
 
 section.rooms .tab-content .info-panel .caption {
@@ -659,6 +660,11 @@ section.rooms .tab-content .info-panel .room-features .feature-info .title{
         height: 2rem;
         width: auto;
     }
+
+    section.rooms .tab-content .info-panel{
+        margin: 0rem;
+    }
+    
 
 }
 
