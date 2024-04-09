@@ -180,13 +180,13 @@ document.addEventListener('DOMContentLoaded', function() {
             icon: {
                 url: '/img/icon/marker-home.svg',
                 // Size of the image
-                size: new google.maps.Size(40, 40),
+                size: new google.maps.Size(60, 60),
                 // Specifies the point within the icon image that is anchored to the marker's position
-                anchor: new google.maps.Point(20, 40),
+                anchor: new google.maps.Point(30, 60),
                 // Specifies the image's origin point (top-left corner of the image portion to use)
                 origin: new google.maps.Point(0, 0),
                 // Scales the icon size
-                scaledSize: new google.maps.Size(40, 40)
+                scaledSize: new google.maps.Size(60, 60)
               },
         });
     }
