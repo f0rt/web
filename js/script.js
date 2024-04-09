@@ -11,18 +11,15 @@ document.addEventListener('DOMContentLoaded', function() {
         } ).mount();
 
 
-    var splideElements = document.querySelectorAll('.splide-rooms');
-        splideElements.forEach(function(splideElement) {
-            new Splide(splideElement,{
-                type       : 'loop',
-                pagination : true,
-                arrows     : true,
-                height     : '30vh',
-                autoWidth  : false,
-                autoHeight : true,
-                autoplay   : false,
-            } ).mount();
-    });
+        new Splide(".splide-rooms",{
+            type       : 'loop',
+            pagination : true,
+            arrows     : true,
+            height     : '30vh',
+            autoWidth  : false,
+            autoHeight : true,
+            autoplay   : false,
+        } ).mount();
 
     let map;
 
@@ -197,7 +194,8 @@ document.addEventListener('DOMContentLoaded', function() {
     initMap();
 });
 
-
+let splides = {};
+splides["Tab1"] = true;
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
 
@@ -214,6 +212,20 @@ function openTab(evt, tabName) {
     // }
 
     // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(tabName).style.display = "flex";
+    let tab = document.getElementById(tabName)
+    tab.style.display = "flex";
+
+    if(!splides[tabName]){
+        splides[tabName] = true;
+        new Splide(tab.getElementsByClassName("splide-rooms")[0],{
+            type       : 'loop',
+            pagination : true,
+            arrows     : true,
+            height     : '30vh',
+            autoWidth  : false,
+            autoHeight : true,
+            autoplay   : false,
+        } ).mount();
+    }
     // evt.currentTarget.className += " active";
 }
