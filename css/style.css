@@ -7,7 +7,7 @@ body{
 
 @media (min-width: 1200px) {
     body .container {
-        border-radius: 10px 10px 0px 0px;
+        border-radius: 10px 10px 10px 10px;
         overflow: hidden;
     }
 }
@@ -153,8 +153,6 @@ header .vat{
 .gray{
     background-color: #4b5867;;
 }
-
-
 
 header .cta-container button img{
     height: 2rem;
@@ -637,6 +635,101 @@ section.location .panel ul li span:first-of-type {
     height: 100%;
     object-fit: cover;
     object-position: center; 
+}
+
+section.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0rem;
+    margin-top:2rem;
+
+}
+
+section.contacts form .title{
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: white;
+}
+
+section.contacts form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: #2E9BDB;
+    flex-grow: 1;
+    height: 25rem;
+    padding: 2rem;
+}
+
+section.contacts form input,textarea{
+    width: 100%;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .9rem;
+    color: #293961;
+}
+
+section.contacts form button{
+    display: flex;
+    gap: .5rem;
+}
+
+section.contacts form img {
+    width:1.7rem;
+}
+
+
+section.contacts form textarea{
+    width: 100%;
+    flex-grow: 1;
+}
+
+section.contacts form{
+    color: white;
+}
+
+section.contacts .contact-person{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+    background-color: #4b5867;
+    padding: 2rem;
+    gap: 1rem;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: .9rem;
+}
+
+
+section.contacts .contact-person .avatar{
+    border-radius: 5rem;
+    width: 10rem;
+    overflow: hidden;
+}
+
+section.contacts .contact-person .avatar img{
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+section.contacts .contact-person .icon-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (min-width: 40rem) {
