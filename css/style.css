@@ -183,6 +183,28 @@ header .address img {
     width: auto;
 }
 
+header .phone{
+    position: absolute;
+    bottom: 4rem;
+    left: 3rem;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+header .phone img {
+    position: relative;
+    top: .2rem;
+    right: .2rem;
+    height: 1.5rem;
+    width: auto;
+}
+
 .content{
     padding: 1rem;
 }
@@ -733,6 +755,12 @@ section.contacts .contact-person .icon-info{
 }
 
 @media (min-width: 40rem) {
+    header .phone{
+        bottom: 2rem;
+        right: 3rem;
+        left: auto;
+    }
+
     .splide .splide__slide img {
         height: 60vh;
     }
