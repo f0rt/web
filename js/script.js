@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Convert HTMLCollection to an array to use forEach (or use a for loop)
     Array.from(buttons).forEach(function(button) {
         // Attach click event listener to each button
-        if (button.id != "map_button"){
+        if (button.id != "map_button" && button.id != "my-form-button"){
             button.addEventListener('click', function() {
                 if (/Mobi|Android/i.test(navigator.userAgent)) {
                     // Mobile device detected, initiate a call
