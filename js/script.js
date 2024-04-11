@@ -1,10 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-      document.getElementById('map_button').addEventListener('click', function() {
-        document.getElementById('map').scrollIntoView({
-          behavior: 'smooth'
-        });
-        gtag('event', 'view_map', {'event_category': 'Map', 'event_label': 'View-Map'});
-      });
+
 
    // Get all buttons with the class 'cta-button'
     var buttons = document.getElementsByClassName('cta-button');
@@ -26,6 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // Track the event with Google Analytics
             gtag('event', 'cta', {'event_category': 'CTA', 'event_label': 'CTA'});
         });
+    });
+
+    document.getElementById('map_button').addEventListener('click', function() {
+        document.getElementById('map').scrollIntoView({
+            behavior: 'smooth'
+        });
+        gtag('event', 'view_map', {'event_category': 'Map', 'event_label': 'View-Map'});
     });
 
       
