@@ -1,5 +1,35 @@
 document.addEventListener('DOMContentLoaded', function() {
-    
+      document.getElementById('map_button').addEventListener('click', function() {
+        document.getElementById('map').scrollIntoView({
+          behavior: 'smooth'
+        });
+        gtag('event', 'view_map', {'event_category': 'Map', 'event_label': 'View-Map'});
+      });
+
+   // Get all buttons with the class 'cta-button'
+    var buttons = document.getElementsByClassName('cta-button');
+
+    // Convert HTMLCollection to an array to use forEach (or use a for loop)
+    Array.from(buttons).forEach(function(button) {
+        // Attach click event listener to each button
+        button.addEventListener('click', function() {
+            if (/Mobi|Android/i.test(navigator.userAgent)) {
+                // Mobile device detected, initiate a call
+                window.location.href = 'tel:0898 271 010'; // Replace +1234567890 with your phone number
+            } else {
+                // Scroll to the element with ID 'dd'
+                document.getElementById('dd').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+            
+            // Track the event with Google Analytics
+            gtag('event', 'cta', {'event_category': 'CTA', 'event_label': 'CTA'});
+        });
+    });
+
+      
+
     new Splide(".splide-header",{
             type       : 'loop',
             pagination : true,
@@ -228,4 +258,6 @@ function openTab(evt, tabName) {
         } ).mount();
     }
     // evt.currentTarget.className += " active";
+
+    gtag('event', 'room_tab', {'event_category': 'Room-Interaction', 'event_label': 'Send-Message'});
 }

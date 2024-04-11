@@ -51,7 +51,7 @@
                 <div class="cta-container">
                     <div class="price"> 550 000 €</div>
                     <div class="vat">(не се дължи ДДС)</div>
-                    <button class="cta-button">Свържи се с нас!</button>
+                    <button class="cta-button" onclick="">Свържи се с нас!</button>
                 </div>
                 <div class="address"><img src="img/icon/marker.svg"/>Драгалевци, София</div>
                 <div class="phone"><img src="img/icon/phone.svg"/>0898 271 010</div>
@@ -109,7 +109,7 @@
              
             </section>
             <section class="content cta">
-                <button class="cta-button gray">Виж картата</button>
+                <button id="map_button" class="cta-button gray">Виж картата</button>
                 <button class="cta-button">Свържи се с нас!</button>
             </section>
             <section class="floorplan">
@@ -647,11 +647,11 @@
                   <button class="gray cta-button" id="my-form-button"><img src="/img/icon/send.svg"></imng>Изпрати</button>
                   <p id="form-status"></p>
                 </form>
-                <div class="contact-person">
+                <div id="dd" class="contact-person">
                     <div class="title">СВЪРЖЕТЕ СЕ С АГЕНТ</div>
                     <div class="avatar"><img src="/img/pic/dd.JPG"></div>
-                    <div clas="name">Диана</div>
-                    <div clas="person-title">Стартши Консултант Недвижими Имоти</div>
+                    <div clas="name">Диана Епитропова</div>
+                    <div clas="person-title">Брокер недвижими имоти</div>
                     <div class="icon-info"><img class="icon" src="img/icon/phone.svg"/>0898 271 010</div>
                     <div class="icon-info"><img class="icon" src="img/icon/send.svg"/>diana@dianahomes.bg</div>
                 </div>
@@ -685,6 +685,7 @@
                       });
                     }
                     form.addEventListener("submit", handleSubmit)
+                    gtag('event', 'send', {'event_category': 'Contact', 'event_label': 'Send-Message'});
                 </script>
 
           </section>

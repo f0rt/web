@@ -737,14 +737,16 @@ section.contacts .contact-person{
 
 
 section.contacts .contact-person .avatar{
-    border-radius: 5rem;
+    border-radius: 6rem;
     width: 10rem;
     overflow: hidden;
+    border: .2rem solid #fff;
 }
 
 section.contacts .contact-person .avatar img{
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     object-position: center;
 }
 
