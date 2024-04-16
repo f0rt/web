@@ -739,6 +739,15 @@ section.contacts .contact-person{
     font-size: .9rem;
 }
 
+section.contacts .contact-person .title{
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: white;
+}
+
 
 section.contacts .contact-person .avatar{
     border-radius: 6rem;
