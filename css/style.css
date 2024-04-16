@@ -259,7 +259,7 @@ section.info .features{
 
 section.info .features .feature{
     display: flex;
-    width: 5rem;
+    width: 6rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
